@@ -1,0 +1,10 @@
+# Sample file to be produced by the Crawler 
+# File to contain following fields separated by ; and internal field delimiter :
+# API_BASE_URL  - Contains the whole url , with the part to be fuzzed replaced by TAG <FUZZ>
+# API_METHOD : Method to be used
+# APT_TYPE : Rest or Non-Rest API
+# API_FUZZ_METHOD : Expected input is either ALL or specific filename from the fuzzdb.
+# API_FIELDS : Expected input is in the form API_FILED_NAME:<predefined value if any> Use comma to separate multiple fields
+# API_HEADERS : This has to be one of the field to be supplied in headers section
+https://files.stage.acrobat.com/api/aax/folders/<FUZZ>:REST:GET:ALL:::
+https://files.stage.acrobat.com/api/aax/folders/OoLyjoI1SvunWyIUO6PrWA:REST:POST:ALL:name,on_dup_name::
