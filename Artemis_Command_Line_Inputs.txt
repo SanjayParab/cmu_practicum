@@ -1,0 +1,3 @@
+python artemis.py -b http://files.stages.acrobat.com -a 1 -c 5 -t ALL -m ./today_website_map -o ./log --login ./login_info -n sanjay
+
+python artemis.py -b http://files.stages.acrobat.com -a 1 -c 5 -t ALL -m ./crawler_ouput.txt -o ./log --l ./login_info -n sanjay

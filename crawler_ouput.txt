@@ -6,5 +6,7 @@
 # API_FUZZ_METHOD : Expected input is either ALL or specific filename from the fuzzdb.
 # API_FIELDS : Expected input is in the form API_FILED_NAME:<predefined value if any> Use comma to separate multiple fields
 # API_HEADERS : This has to be one of the field to be supplied in headers section
-https://files.stage.acrobat.com/api/aax/folders/<FUZZ>:REST:GET:ALL:::
-https://files.stage.acrobat.com/api/aax/folders/OoLyjoI1SvunWyIUO6PrWA:REST:POST:ALL:name,on_dup_name::
+https://files.stage.acrobat.com/api/aax/folders/<FUZZ>;REST;GET;null.fuzz.txt;;;
+https://files.stage.acrobat.com/api/aax/folders/afb425e2-7b9c-4a9c-ab22-abe2e4c66437;REST;POST;null.fuzz.txt;name,on_dup_name;;
+https://files.stage.acrobat.com/api/aax/folders/afb425e2-7b9c-4a9c-ab22-abe2e4c66437;REST;POST;null.fuzz.txt;name,on_dup_name;;
+https://files.stage.acrobat.com/api/aax/folders/bcc56b1c-75ba-4e5b-9fd8-76f3f774036a?orderby=name&orderdirection=ascending&metadata=name%2Ccontent_type%2Ccreated%2Cmodified%2Cparent_id%2Csize;REST;GET;null.fuzz.txt;;
